@@ -11,6 +11,7 @@
     -->
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
 
 <title>Vicious Cycles</title>
 
@@ -18,27 +19,80 @@
 
 <body>
     <header>
-        <h1>
-            Vicious Cycles
-        </h1>
-        <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Bikes</li>
-            <li>Services</li>
-            <li>Events</li>
-            <li>Contact</li>
-        </ul>
+        <!--Logo-->
+        <a href="index.html"><img src="images/vicious-cycles-logo.png" id="logo"  alt="vicious cycles logo"></a>  
+       
+        <!--Navigation-->
+        <!--After watching the project check in session, I saw that we were to add the pages (other than index) to a html folder.  Once I did this, I changed the code here to add the folder in each nav on each page, but after changing it I was not able to make the navigation work.  I simplified it again so that it worked, but still need to work on this to move to a folder. I had the link "html/about.html" as an example.  Do you have any suggestions on how to move files and save them properly so they still work?-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a target="_self" href="about.html">About Us</a></li>
+                <li><a href="bikes.html">Bikes</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+       
     </header>
 
     <main>
-        <h2>
+        <h1>
             Welcome to Vicious Cycles, a serious bike store for a serious pastime.
-        </h2>
-        <img src="images/bike-mountain-sunrise.jpg" alt="Man holding bike on mountain top with sunrise" height="450" width="650">
-        <p></p>
-    </main>
+        </h1>
+<!--What I would like to do is make a grid, alternating text and images. I had some success doing this on the about me page. I had trouble making this work on the home page. I will continue to work on making this layout work, and if I have troubule I will contact you or the ILC.-->
+        <div class="container">
+            <img src="images/bikeSunrise.jpg" id="sunrise"  alt="Bike rider on mountain at sunrise." width=400>
+            <p id="copy"> We offer top-quality cycling equipment, the supply line of choice. We are a name you can trust at a price you can afford. 
+            </p>
 
+            <p>
+                The Vicious Cycle community is a group of individuals who care about you as a cyclist, providing the equipment you need.  Not only do we provide the gear and service you need, you can also join one of our groups which provide an environment where you can learn and grow no matter your level of biking.  Connecting with friends and nature might be the best part of your week.
+
+                Our favorite read? A heartwarming story of two friends cycling on the Great Allegheny Passage. This reinforces our belief in the friendship that can develop through cycling adventures. Get your copy <a href="https://www.amazon.com/Get-Up-Ride-adventure-Allegheny/dp/173626060X" target="_blank">here.</a>
+
+            </p>
+
+            <p>
+                We are a name you can trust. Led by local enthusiasts, Vicious Cycles is a cycle shop with a reputation in innovative custom designs.  Choose from our in-store brands or make an appointment for your in-house customization. 
+
+            </p>
+
+            <p>Our store is unique because we want you to become a better rider, no matter the level - from beginner to competitor. We believe that the bick should be an extension of the owner. 
+            </p>
+
+            <p>We bike hard. We bike often.  Get up, fall, get up and ride again. With Vicious Cycles.
+            </p>
+
+<!--I am intending also to add three boxes underneath with focused text and links to the bixes, services, and events pages. I was going to tie this into the grid that I was planning to create. When I am able to make the top section work I will try to add these and line them up.-->
+
+        </div>
+        
+       
+    </main>
+      
+
+
+
+        <!--I need further work on the footer to make it line up better. I will continue to experiment with other layouts that are not UL -->
+
+    <footer id="footer">
+        <ul>
+            <li>Contact Us</li>
+            <li>2555 Main Street</li>
+            <li><a href="tel:5551117766">Call us at 555-111-7766</a></li>
+            <li><a href="mailto:contact@viciouscycles.net">Email: contact@viciouscycles.net</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="facebook.com"><img src="images/facebookLogo.png" alt="facebook logo" width=50 height=50></a></li>
+            <li><a href="twitter.com"><img src="images/twitter-logo-01282021/Twitter logo/PNG/2021TwitterLogoWhite.png" alt="twitter logo" width=30 height=30></a></li>
+        </ul>
+/* I was not able to validate the document because there is a space in the twitter image link. I tried renaming the image and it is not working. I will find a better image to download that is named properly.*/
+
+        <p>&copy; Copyright 2022.  All Rights Reserved.</p>
+    </footer>
 </body>
 
 

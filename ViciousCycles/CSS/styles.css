@@ -1,0 +1,149 @@
+
+#logo {
+    width: 80%;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #545454;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block; 
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+body{
+    background-color: lightsteelblue;
+    color: black;
+    margin: 10%;
+}
+
+p {
+    font-size: large;
+}
+
+h1 {
+    color: sienna;
+    text-align:center;
+}
+
+
+
+/*I had trouble getting the text/image to float left or right. I was unable to have any effect on the p. I tried using different types of flexbox as well as float.  I am also still tired from the travel from the funeral, so I may be able to figure it out after I am more rested. Otherwise I will email you for help. */
+#sunrise {
+    float:left;
+    
+}
+
+
+
+h3 {
+    color: sienna;
+
+}
+
+/*suggestion in class for footer
+#page-containter{
+    position:relative;
+    min-height: 100vh;
+}
+*/
+
+
+
+
+.grid-container{
+    border: 25px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   /* grid-template-rows: repeat (3);*/
+    gap: 10px;
+}
+
+#about {
+    font-size: large;
+}
+
+#bio1, #bio2, #bio3 {
+    border:solid 10px sienna;
+    padding: 2px;
+    color: darkslategray;
+
+}
+
+@media all and (min-width:800px) {
+    #bio1, #bio2, #bio3 {
+        font-size:x-large;
+    }
+
+    #about {
+        font-size: xx-large;
+    }
+}
+
+@media all and (max-width:1180px){
+    h1 {
+        font-size: x-large;
+    }
+}
+
+.container {
+    display:flex;
+    min-height:100vh;
+    flex-direction: column;
+}
+
+#headshot1, #headshot2, #headshot3{
+    width: 75%;
+}
+
+h2 {
+    color: steelblue;
+    text-align: center;
+}
+
+/*suggestion in class for footer
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+*/
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #545454;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/*suggestion in class
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+*/
