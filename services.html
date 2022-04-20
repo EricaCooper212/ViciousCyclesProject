@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+        <!--
+        Name:Erica Cooper
+        Filename: Vicious Cycles 
+        Blackboard Username: ercooper
+        Class Section: WEB 140.0001
+        Purpose: Vicious Cycles Project
+    -->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+
+<title>Vicious Cycles</title>
+
+</head>
+
+<body>
+    <header>
+        <header>
+            <!--Logo-->
+           <a href="index.html"><img src="images/vicious-cycles-logo.png" id="logo"  alt="vicious cycles logo"></a>  
+           
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li> 
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="bikes.html">Bikes</a></li>
+                    <li><a href="apparel.html">Apparel</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </nav>
+       
+    </header>
+
+    <main>
+  
+        <br>
+        
+        <section class="service-info">
+            <div class="service-box service-box-1">
+                <h2>Tune Up</h2>
+                <img src="images/repair2.jpg" id="repair" alt="Man fixing bike gears in workshop" width="300px">
+            </div> 
+             
+            <div class="service-box service-box-2">
+                <h2>Repair</h2>
+                <img src="images/repair3.jpg" id="repair" alt="Bike gears and chain with tools on workbench" width="300px">           
+            </div> 
+ 
+            <div class="service-box service-box-3">
+             <h2>Customize</h2>
+             <img src="images/repair1.jpg" id="repair" alt="Man fixing brakes on bike handlebars" width="300px">    
+            </div>
+        </section>
+       
+
+        <div>
+            <h2>Schedule an appointment with our technicians.</h2>
+            <p>Whether you are interested in a simple tune-up, or a fully customized bike, our technicians are here to help you.  Let's meet and discuss your specific needs. Fill out the information below, and we will contact you to confirm your appointment.</p>
+
+            <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+
+            <fieldset>
+                <legend>What is the best way to contact you?</legend>
+                <input type="radio" id="email-pref" name="contact-preference" value="email-pref">
+                <label for="email-pref">Email</label>
+
+                <input type="radio" id="phone-pref" name="contact-preference" value="phone-pref">
+                <label for="phone-pref">Phone Call</label>
+
+                <input type="radio" id="text-pref" name="contact-preference" value="text-pref">
+                <label for="text-pref">Text</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What services are you interested in?</legend>
+                
+                <label for="tune-up"><input type="checkbox" id="tune-up" name="service-preference" value="tune-up">Tune-Up</label><br>
+                
+                <label for="repair"><input type="checkbox" id="repair" name="service-preference" value="repair">Repair</label><br>
+
+                <label for="customize"><input type="checkbox" id="customize" name="service-preference" value="customize">Customize</label><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferred Appointment Day</legend>
+                <label for="days"></label>
+                <select name="days" id="days">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
+            </fieldset>
+            
+
+                <br>
+                <br>
+                <input type="submit">
+                <br>
+                <br>
+        </div>
+    </main>
+    <footer id="footer">
+       
+        <p>Contact Us</p>
+        <p>12214 Main Street <br>
+            Raleigh, NC</p>   
+        <p><a href="tel:5551117766">Call us at 555-111-7766</a></p>
+        <p><a href="mailto:contact@viciouscycles.net">Email: contact@viciouscycles.net</a></p>
+  
+        <p><a href="facebook.com"><img src="images/facebook.png" alt="facebook logo" width=50 height=50></a></p>
+        <p><a href="twitter.com"><img src="images/twitter.png" alt="twitter logo" width=30 height=30></a></p>
+   
+    <p>&copy; Copyright 2022.  All Rights Reserved.</p>
+</footer>
+</body>
+
+
+</html>

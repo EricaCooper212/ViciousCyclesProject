@@ -1,0 +1,682 @@
+body, html {
+    height: 100%;
+}
+
+.container {
+    margin: 100px auto;
+    padding: 10px;
+}
+
+
+#logo {
+    width: 80%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #545454;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+li {
+    float: left;
+}
+
+li a {
+    display: block; 
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+body{
+    background-color: lightsteelblue;
+    color: black;
+    margin: 10%;
+    line-height: 1.4;
+}
+
+.btn {
+    background: #545454;
+    color: white;
+    padding: 0.6rem 1.3rem; 
+    text-decoration: none;
+    border: 0;
+    border-radius: 20%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* top container */
+
+.top-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        'showcase showcase top-box-a'
+        'showcase showcase top-box-b';
+
+}
+
+/* showcase */
+.showcase {
+    grid-area: showcase;
+    min-height: 800px;
+    background: url("../images/bikeSunrise.jpg");
+    background-color: blanchedalmond;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+}
+
+
+.showcase img {
+    background: url(../images/bikeSunrise.jpg);
+    
+
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    
+    color: sienna;
+}
+.showcase h2 {
+    font-size: 4rem;
+    background-color: oldlace;
+    color: sienna;
+    font-size:xx-large;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin: 10%;
+    color: black;
+    background-color: oldlace;
+    align-content:space-around;
+    
+}
+
+
+
+
+/* top box */
+
+.top-box {
+background: lightslategray;
+display: grid;
+align-items: center;
+justify-items: center;
+box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+}
+
+.top-box h4 {
+    font-size: 2rem;
+}
+
+.top-box p {
+    margin: 10%;
+}
+
+.top-box-a {
+    grid-area: top-box-a;
+}
+
+.top-box-b {
+    grid-area: top-box-b;
+}
+
+
+p {
+    font-size: large;
+}
+
+h1 {
+    color: sienna;
+    text-align:center;
+}
+
+/* info */
+.info {
+    background-color:darkgoldenrod;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3rem;
+    
+}
+
+.info h2 {
+    color: oldlace;
+    text-align: left;
+}
+
+.info p {
+    color: black;
+    font-size: large;
+    background-color: oldlace;
+}
+
+
+/* boxes */
+.boxes {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.box {
+    background:lightslategrey;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+}
+
+
+
+
+/* about page */
+
+.grid-container{
+    border: 25px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   grid-template-rows: repeat (3);
+    gap: 10px;
+}
+
+#about {
+    font-size: large;
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#about p {
+    font-size: xx-large;
+}
+
+
+#bio1, #bio2, #bio3 {
+    border:solid 10px sienna;
+    padding: 2px;
+    color: darkslategray;
+
+}
+
+@media all and (min-width:800px) {
+    #bio1, #bio2, #bio3 {
+        font-size:x-large;
+    }
+
+    #about {
+        font-size: xx-large;
+    }
+}
+
+@media all and (max-width:1180px){
+    h1 {
+        font-size: x-large;
+    }
+}
+
+.container {
+    display:flex;
+    min-height:100vh;
+    flex-direction: column;
+}
+
+#headshot1, #headshot2, #headshot3{
+    width: 75%;
+}
+
+h2 {
+    color: darksteelblue;
+    text-align: center;
+}
+
+
+/* contact page */
+
+.contact-info {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        'contact-box-1 contact-box-2 contact-box-3';
+
+}
+
+.contact-box {
+    background: lightslategray;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.contact-box p {
+    margin: 10%;
+}
+
+.contact-box-1 {
+    grid-area: contact-box-1;
+}
+
+.contact-box-2 {
+    grid-area: contact-box-2;
+}
+
+.contact-box-3 {
+    grid-area: contact-box-3;
+}
+
+.map {
+    width: 100%;
+    
+
+}
+
+.map-wrap {
+    max-width: 900px;
+}
+
+
+
+/* form */
+
+form, fieldset {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button, input, select, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+input textarea select {
+    width: 150px;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+input[type="text"], input[type="tel"], input[type="email"]{
+    width: 90%;   
+    padding: 5px;
+    margin: .2em auto .8em auto;
+}
+
+textarea {
+    width: 90%;
+}
+
+input:focus {
+    background-color: lightgray;
+}
+
+button {
+    background-color: lightgray;
+}
+
+label {
+    display: block;
+
+}
+
+fieldset {
+    border-width: 0;
+
+}
+
+legend {
+    margin-left: -.1em;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* services page*/
+
+.service-info {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+        'contact-box-1 contact-box-2 contact-box-3';
+
+}
+
+.service-box {
+    background: darkgoldenrod;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.service-box p {
+    margin: 10%;
+}
+
+.service-box-1 {
+    grid-area: contact-box-1;
+}
+
+.service-box-2 {
+    grid-area: contact-box-2;
+}
+
+.service-box-3 {
+    grid-area: contact-box-3;
+}
+
+
+
+label #tune-up #repair #customize {
+    padding: 5px;
+    width: 6em;
+}
+
+
+/* bikes page */
+
+
+.bikePage {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.bikePage h2 {
+    font-size: 3em;
+    color: sienna;
+}
+
+.bikePage h3 {
+    font-size: 2em;
+    color: darkslategray;
+}
+
+.item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%%;
+}
+
+
+/* bikes for sale */
+
+
+
+
+
+
+.product { 
+    /* box-sizing: border-box; */
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, minmax(100px,));
+    gap: 20px;
+    grid-auto-rows: minmax(400px auto);
+    
+}
+
+.bike { 
+    background: darkgoldenrod;
+    color: black;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    position: relative;
+    top: 0;
+    transition: all;
+}
+
+.bike h4 {
+    text-align: center;
+    font-size: large;
+    color: darkslategray;
+}
+
+.bike .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+}
+
+.bike:hover {
+    top: -2px;
+    background: goldenrod;
+}
+
+/* events */
+
+.top-hero {
+    grid-area: showcase;
+    min-height: 800px;
+    background: url("../images/groupCycle1.jpg");
+    background-color: blanchedalmond;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+}
+
+
+.top-hero img {
+    background: url(../images/groupCycle1.jpg);
+    
+
+}
+
+.top-hero h1 {
+    font-size: 4rem;
+    
+    color: sienna;
+}
+.top-hero h2 {
+    font-size: 4rem;
+    background-color: oldlace;
+    color: sienna;
+    font-size:xx-large;
+}
+
+.top-hero p {
+    font-size: 1.3rem;
+    margin: 10%;
+    color: black;
+    background-color: oldlace;
+    align-content:space-around;
+    
+}
+
+.event-table {
+    background-color: goldenrod;
+    margin: auto;
+    text-align: center;
+    padding: 4em;
+
+    border-collapse:collapse;
+   
+}
+
+.event-table th{
+    background-color: darkgoldenrod;
+    
+}
+
+.event-table table, th, td {
+    border: 0.1em solid #000;
+    text-align: center;
+  
+}
+
+
+.apparel {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, minmax(100px,));
+    gap: 20px;
+    grid-auto-rows: minmax(400px auto);
+}
+
+.item { 
+    background: darkgoldenrod;
+    color: black;
+    padding: 20px;
+    border-radius: 10%;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    position: relative;
+    top: 0;
+    transition: all;
+}
+
+.item h4 {
+    text-align: center;
+    font-size: 2rem;
+    color: darkslategray;
+}
+
+.item .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+}
+
+.item:hover {
+    top: -2px;
+    background: goldenrod;
+}
+
+
+
+footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #545454;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+
+@media  (min-width: 500px) {
+    
+
+    /* forms */
+    label {
+        display: inline;
+    }
+    input[type="text"], input[type="tel"], input[type="email"] {
+        width: 50%;
+
+    }
+    textarea {
+        width: 50%;
+    }
+    
+    label {
+        width: 10em;
+        display: inline-block;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 700px) {
+    .nav ul {
+        grid-template-columns: 1fr ;
+    }
+
+    .top-hero h1 {
+        font-size: xx-large;
+        
+        color: sienna;
+    }
+    .top-hero h2 {
+        font-size: medium;
+        background-color: oldlace;
+        color: sienna;
+    }
+    
+    .top-hero p {
+        font-size: small;
+        margin: 10%;
+        color: black;
+        background-color: oldlace;
+        align-content:space-around;
+        
+    }
+
+    #rides {
+        overflow-x: auto; 
+        width: 50%;
+    }
+    .apparel {
+        display: inline-grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .product {
+        display: inline-grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
